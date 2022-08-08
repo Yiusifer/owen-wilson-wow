@@ -3,7 +3,9 @@ import { useState } from "react";
 
 export default function Button() {
 
-  const [movieName, setMovieName] = useState(false)
+  const [movieName, setMovieName] = useState("");
+  const [releaseDate, setReleaseDate] = useState("");
+  const [director, setDirector] = useState("");
 
   // let movieName = "";
   // let releaseDate = "";
@@ -15,6 +17,8 @@ export default function Button() {
       .then(res => {
         console.log(res.data[0]);
         setMovieName(res.data[0].movie);
+        setReleaseDate(res.data[0].release_date);
+        setDirector(res.data[0].director);
 
       })
       .catch(err => {
@@ -26,8 +30,9 @@ export default function Button() {
   return (
     <div>
       <button onClick={generateWow}>Click Me!</button>
-      <p>{movieName}</p>
-
+      {(movieName && <h5> You just heard Owen Wilson say 'Wow!' from: {movieName} </h5>)}
+      {(movieName && <h5> Directed by: {director} </h5>)}
+      {(movieName && <h5> Released in: {releaseDate} </h5>)}
     </div>
   )
 }
