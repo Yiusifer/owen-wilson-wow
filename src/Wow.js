@@ -28,6 +28,7 @@ export default function Button() {
 
   return (
     <div>
+      <h3> 😎 😎 Super Cool 'Wow!' Button 😎 😎 </h3>
       <button onClick={generateWow}>Click Me!</button>
       {(movieName && <h5> You just heard Owen Wilson say 'Wow!' from: {movieName} </h5>)}
       {(movieName && <h5> Directed by: {director} </h5>)}

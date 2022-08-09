@@ -7,9 +7,9 @@ import { Fragment } from 'react';
 function App() {
 
   return (
-    <Fragment>
+    <div className="App">
        <Wow></Wow>
-    </Fragment>
+    </div>
   );
 }
 
