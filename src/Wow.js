@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function Button() {
+export default function Wow() {
 
   const [movieName, setMovieName] = useState("");
   const [releaseDate, setReleaseDate] = useState("");
