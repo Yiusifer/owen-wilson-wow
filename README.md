@@ -1,6 +1,6 @@
 # About
 
-A simple app that uses [https://owen-wilson-wow-api.herokuapp.com](The Owen Wilson Wow API) to say 'Wow!' upon button click, along with displaying details of the source film.
+A simple app that uses [The Owen Wilson Wow API](https://owen-wilson-wow-api.herokuapp.com) to say 'Wow!' upon button click, along with displaying details of the source film.
 
 ### Screenshot
 
